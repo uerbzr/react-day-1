@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import FifthComponent from "./components/FifthComponent";
 import AuthorList from "./components/AuthorList";
+import ValueChanger from "./components/ValueChanger";
 
 const authors = [
   { id: 1, name: "Chad" },
@@ -73,6 +74,8 @@ function App() {
       <FourthComponent name="sue" age="23" />
       <FifthComponent />
       <AuthorList authors={authors} />
+      <ValueChanger count={count} setCount={setCount} />
+      <br />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
